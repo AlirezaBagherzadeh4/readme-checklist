@@ -7,7 +7,7 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
 
 ---
 
-## 1. SEO
+## 📈 1. SEO
 
 - #### Meta Tags و ساختار HTML
   - [ ] `<title></title>` مناسب (50-60 characters)
@@ -20,9 +20,11 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
   - [ ] `og:description`
   - [ ] `og:image`
   - [ ] `og:url`
+  - [ ] `og:type`
   - [ ] `og:card`
   - [ ] `twitter:title`
   - [ ] `twitter:description`
+  - [ ] `twitter:card`
 - #### Schema Markup / Structured Data
   - [ ] WebSite
   - [ ] BreadcrumbList
@@ -39,11 +41,11 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
   - [ ] جلوگیری از رندر ناقص سمت کلاینت که باعث indexing ناقص می‌شود
 - #### Content SEO
   - [ ] فقط یک `<h1>` برای هر صفحه
-  - [ ] ساختار heading منطقی (h1 → h2 → h3 → h4 → h5 → h6)
+  - [ ] ساختار heading منطقی (h1 → h2 → h3 → h4 → h5 → h6) [نمونه](https://substackcdn.com/image/fetch/$s_!JKn7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba08fa28-745a-458d-8c23-29acb08e2cef_1600x836.png)
   - [ ] semantic HTML structure: `<header>, <footer>, <main>, <article>, <section>, <aside>, <nav>, <figure>`
   - [ ] تصاویر همراه با alt text
 - #### Link Strategy
-  - [ ] لینک خوانا، برای مثال: `<Link href="/seo-best-practices">`
+  - [ ] لینک خوانا، برای مثال: `<Link href="/seo-best-practices">` [نمونه](https://substackcdn.com/image/fetch/$s_!fOM2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0dfd32c6-e2f8-433b-bdb1-5b9cf88717ba_1600x500.png)
   - [ ] لینک‌های خارجی با `rel="noopener noreferrer"`
   - [ ] 404 نشدن لینک‌ها
 - #### International SEO (در صورت استفاده از i18n)
@@ -53,15 +55,37 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
 
 ---
 
-## 2. Security
+## 🔒 2. Security
 
-- [ ] HTTPS فعال
-- [ ] پاکسازی ورودی‌ها (Input Sanitization)
-- [ ] جلوگیری از XSS
-- [ ] جلوگیری از CSRF
-- [ ] Password hashing استاندارد
-- [ ] محدودیت نرخ درخواست‌ها (Rate limiting)
-- [ ] آپدیت بودن وابستگی‌ها
+- #### Authentication & Authorization
+  - [ ] ذخیره‌نکردن توکن در localStorage (استفاده از [HttpOnly Cookie](https://nextjs.org/docs/app/api-reference/functions/cookies))
+  - [ ] محدودسازی تعداد تلاش‌های ورود (Rate Limit)
+  - [ ] بررسی دسترسی‌ها قبل از هر روت و در route handler ها
+  - [ ] بررسی توکن کاربر در `middleware.ts`
+  - [ ] [ACL](https://medium.com/@mesutas.dev/rbac-in-next-js-with-nextauth-b438fe59eeeb) (بررسی دسترسی‌ها)
+- #### Input Validation & Sanitization
+  - [ ] Validation سمت سرور با Zod
+  - [ ] Validate کامل body, query, params
+  - [ ] پاکسازی ورودی کاربر (Sanitization), استفاده از [DOMPurify](https://github.com/cure53/DOMPurify) یا `dangerouslySetInnerHTML`
+  - [ ] Escapeکردن خروجی (Output encoding)
+  - [ ] جلوگیری از درج HTML user-generated
+  - [ ] انتقال اجرای توابع حساس و امنیتی به سمت سرور
+- #### Password & Credential Security
+  - [ ] ممنوعیت ذخیره plain passwords
+  - [ ] بررسی حداقل طول و پیچیدگی رمز
+- #### Dependency Security
+  - [ ] اجرای مرتب `npm audit`
+  - [ ] حذف پکیج‌های بلااستفاده
+- #### File Upload Security
+  - [ ] بررسی نوع فایل [(MIME)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types/Common_types)
+  - [ ] محدودیت حجم فایل
+  - [ ] جلوگیری از اجرای فایل روی سرور
+- #### Session & Cookies
+  - [ ] زمان انقضای مناسب session
+  - [ ] استفاده از SameSite Cookies: `SameSite=Lax` یا `Strict`
+- #### Infrastructure & Hosting
+  - [ ] محیط production از dev جدا باشد
+  - [ ] Secret-ENV ها فقط در سرور قرار بگیرند
 
 ---
 
