@@ -1,6 +1,6 @@
 <div dir="auto">
 
-# 📝 Project Checklist
+# 📋 Project Checklist
 
 _**این چک‌لیست برای کنترل کیفیت و آماده‌سازی نهایی پروژه استفاده می‌شود.  
 هر سکشن شامل موارد ضروری برای بررسی است.**_
@@ -41,34 +41,33 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
   - [ ] جلوگیری از رندر ناقص سمت کلاینت که باعث indexing ناقص می‌شود
 - #### Content SEO
   - [ ] فقط یک `<h1>` برای هر صفحه
-  - [ ] ساختار heading منطقی (h1 → h2 → h3 → h4 → h5 → h6) [نمونه](https://substackcdn.com/image/fetch/$s_!JKn7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba08fa28-745a-458d-8c23-29acb08e2cef_1600x836.png)
-  - [ ] semantic HTML structure: `<header>, <footer>, <main>, <article>, <section>, <aside>, <nav>, <figure>`
-  - [ ] تصاویر همراه با alt text
+  - [ ] ساختار _heading_ منطقی (h1 → h2 → h3 → h4 → h5 → h6) [نمونه](https://substackcdn.com/image/fetch/$s_!JKn7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba08fa28-745a-458d-8c23-29acb08e2cef_1600x836.png)
+  - [ ] _semantic HTML structure_: `<header>, <footer>, <main>, <article>, <section>, <aside>, <nav>, <figure>`
+  - [ ] تصاویر همراه با _alt text_
 - #### Link Strategy
   - [ ] لینک خوانا، برای مثال: `<Link href="/seo-best-practices">` [نمونه](https://substackcdn.com/image/fetch/$s_!fOM2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0dfd32c6-e2f8-433b-bdb1-5b9cf88717ba_1600x500.png)
   - [ ] لینک‌های خارجی با `rel="noopener noreferrer"`
   - [ ] 404 نشدن لینک‌ها
 - #### International SEO (در صورت استفاده از i18n)
   - [ ] استفاده از `hreflang`
-  - [ ] ساخت sitemap جدا برای هر زبان
-  - [ ] مسیرهای داینامیک سازگار با locale
+  - [ ] ساخت _sitemap_ جدا برای هر زبان
+  - [ ] مسیرهای داینامیک سازگار با _locale_
 
 ---
 
 ## 🔒 2. Security
 
 - #### Authentication & Authorization
-  - [ ] ذخیره‌نکردن توکن در localStorage (استفاده از [HttpOnly Cookie](https://nextjs.org/docs/app/api-reference/functions/cookies))
-  - [ ] محدودسازی تعداد تلاش‌های ورود (Rate Limit)
-  - [ ] بررسی دسترسی‌ها قبل از هر روت و در route handler ها
+  - [ ] ذخیره‌نکردن توکن در _localStorage_ (استفاده از [HttpOnly Cookie](https://nextjs.org/docs/app/api-reference/functions/cookies))
+  - [ ] محدودسازی تعداد تلاش‌های ورود (_Rate Limit_)
+  - [ ] بررسی دسترسی‌ها قبل از هر روت و در _route handler_ ها
   - [ ] بررسی توکن کاربر در `middleware.ts`
   - [ ] [ACL](https://medium.com/@mesutas.dev/rbac-in-next-js-with-nextauth-b438fe59eeeb) (بررسی دسترسی‌ها)
 - #### Input Validation & Sanitization
-  - [ ] Validation سمت سرور با Zod
+  - [ ] Validation سمت سرور با _Zod_
   - [ ] Validate کامل body, query, params
-  - [ ] پاکسازی ورودی کاربر (Sanitization), استفاده از [DOMPurify](https://github.com/cure53/DOMPurify) یا `dangerouslySetInnerHTML`
-  - [ ] Escapeکردن خروجی (Output encoding)
-  - [ ] جلوگیری از درج HTML user-generated
+  - [ ] پاکسازی ورودی کاربر (_Sanitization_), استفاده از [DOMPurify](https://github.com/cure53/DOMPurify) یا `dangerouslySetInnerHTML`
+  - [ ] جلوگیری از درج _HTML user-generated_
   - [ ] انتقال اجرای توابع حساس و امنیتی به سمت سرور
 - #### Password & Credential Security
   - [ ] ممنوعیت ذخیره plain passwords
@@ -81,22 +80,40 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
   - [ ] محدودیت حجم فایل
   - [ ] جلوگیری از اجرای فایل روی سرور
 - #### Session & Cookies
-  - [ ] زمان انقضای مناسب session
-  - [ ] استفاده از SameSite Cookies: `SameSite=Lax` یا `Strict`
+  - [ ] زمان انقضای مناسب _session_
+  - [ ] استفاده از _SameSite Cookies_: `SameSite=Lax` یا `Strict`
 - #### Infrastructure & Hosting
-  - [ ] محیط production از dev جدا باشد
-  - [ ] Secret-ENV ها فقط در سرور قرار بگیرند
+  - [ ] محیط _production_ از _dev_ جدا باشد
+  - [ ] _Secret-ENV_ ها فقط در سرور قرار بگیرند
 
 ---
 
-## 3. Documentation
+## 📝 3. Documentation
 
-- [ ] README کامل
-- [ ] ساختار پوشه‌ها توضیح داده شده
-- [ ] دستور نصب و اجرا
-- [ ] توضیح معماری پروژه
-- [ ] موارد مهم در CHANGELOG
-- [ ] Developer Notes
+- #### README file
+  - [ ] توضیح کامل پروژه
+  - [ ] دستور نصب و اجرا
+  - [ ] ساختار پوشه‌ها
+  - [ ] API Routing
+  - [ ] توضیح تکنولوژی‌ها
+  - [ ] نحوه _Build_ و _Deploy_
+- #### Architecture Docs
+  - [ ] Folder structure توضیح
+  - [ ] Data Flow
+  - [ ] Routing Flow
+- #### API Documentation
+  - [ ] توضیح *endpoint*ها
+  - [ ] ورودی‌ها و خروجی‌ها
+  - [ ] توضیح status codeها
+- #### Contribution Guide
+  - [ ] قوانین _commit_
+  - [ ] قوانین _branch_
+- #### CHANGELOG
+  - [ ] نسخه‌ها و تغییرات
+  - [ ] اضافه شدن قابلیت‌ها
+  - [ ] رفع باگ‌ها
+- #### Dev Notes
+  - [ ] *TODO*های Developer
 
 ---
 
