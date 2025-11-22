@@ -97,6 +97,7 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
   - [ ] API Routing
   - [ ] توضیح تکنولوژی‌ها
   - [ ] نحوه _Build_ و _Deploy_
+  - [ ] _Node_ version
 - #### Architecture Docs
   - [ ] Folder structure توضیح
   - [ ] Data Flow
@@ -137,14 +138,21 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
 
 ---
 
-## 6. Performance
+## 📊 6. Performance
 
-- [ ] Lighthouse Performance Score
-- [ ] Code splitting
-- [ ] Lazy-loading
-- [ ] کش سمت کلاینت/سرور
-- [ ] بهینه‌سازی تصویر
-- [ ] استفاده از CDN
+- #### Code Performance
+  - [ ] جلوگیری از _re-render_ اضافی
+  - [ ] استفاده از [useMemo](https://react.dev/reference/react/useMemo)، [useCallback](https://react.dev/reference/react/useCallback)
+  - [ ] [dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import)
+  - [ ] انتقال logic به [RSC](https://dev.to/hasunnilupul/react-server-components-rsc-a-deep-dive-with-examples-and-diagrams-3g4c)، برای کاهش بار جاوا اسکریپت
+  - [ ] کش کردن داده با [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Request/cache)
+  - [ ] _Event Listeners_ [clean ups](https://refine.dev/blog/useeffect-cleanup/#introduction)
+  - [ ] [Code Splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting)
+- #### Page Load
+  - [ ] استفاده بهینه از _SSG/SSR_
+  - [ ] استفاده از [Next/Image](https://nextjs.org/docs/pages/getting-started/images)
+  - [ ] استفاده از [Next/Font](https://nextjs.org/docs/pages/getting-started/fonts)
+  - [ ] کاهش Layout Shift با width/height تصاویر, skeleton loader, placeholder blur
 
 ---
 
