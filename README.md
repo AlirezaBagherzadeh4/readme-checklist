@@ -10,8 +10,8 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
 ## 📈 1. SEO
 
 - #### Meta Tags و ساختار HTML
-  - [ ] `<title></title>` مناسب (50-60 characters)
-  - [ ] `<meta name="description" content="">` مرتبط برای هر صفحه (150-160 characters)
+  - [ ] `<title></title>` مناسب (max 60)
+  - [ ] `<meta name="description" content="">` مرتبط برای هر صفحه (max 160 characters)
   - [ ] `<meta name="robots">` (برای صفحات بلاک‌شده یا غیر indexable)
   - [ ] `<link rel="canonical" href=""https://example.com/>` برای جلوگیری از duplicate content
   - [ ] `<meta name="viewport">` برای رسپانسیو
@@ -58,7 +58,7 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
 ## 🔒 2. Security
 
 - #### Authentication & Authorization
-  - [ ] ذخیره‌نکردن توکن در _localStorage_ (استفاده از [HttpOnly Cookie](https://nextjs.org/docs/app/api-reference/functions/cookies))
+  - [ ] ذخیره نکردن توکن در _localStorage_ (استفاده از [HttpOnly Cookie](https://nextjs.org/docs/app/api-reference/functions/cookies))
   - [ ] محدودسازی تعداد تلاش‌های ورود (_Rate Limit_)
   - [ ] بررسی دسترسی‌ها قبل از هر روت و در _route handler_ ها
   - [ ] بررسی توکن کاربر در `middleware.ts`
@@ -141,8 +141,7 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
 ## 📊 6. Performance
 
 - #### Code Performance
-  - [ ] جلوگیری از _re-render_ اضافی
-  - [ ] استفاده از [useMemo](https://react.dev/reference/react/useMemo)، [useCallback](https://react.dev/reference/react/useCallback)
+  - [x] جلوگیری از _re-render_ اضافی
   - [ ] [dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import)
   - [ ] انتقال logic به [RSC](https://dev.to/hasunnilupul/react-server-components-rsc-a-deep-dive-with-examples-and-diagrams-3g4c)، برای کاهش بار جاوا اسکریپت
   - [ ] کش کردن داده با [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Request/cache)
@@ -153,6 +152,13 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
   - [ ] استفاده از [Next/Image](https://nextjs.org/docs/pages/getting-started/images)
   - [ ] استفاده از [Next/Font](https://nextjs.org/docs/pages/getting-started/fonts)
   - [ ] کاهش Layout Shift با width/height تصاویر, skeleton loader, placeholder blur
+- #### Image Loading
+  - [ ] تصویر LCP با `priority={true}`
+  - [ ] لوگوی سایت، تصویر Hero و اسلایدر بالای صفحه به صورت `loading="eager"`
+  - [ ] تصاویر کارد بلاگ‌ها، مقالات، داخل مدال، فوتر به صورت `loading="lazy"`
+- #### Lighthouse
+  - [ ] LCP زیر ۲.۵ ثانیه
+  - [ ] CLS < 0.1
 
 ---
 
