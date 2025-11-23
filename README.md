@@ -93,9 +93,6 @@
 - #### Password & Credential Security
   - [ ] ممنوعیت ذخیره plain passwords
   - [ ] بررسی حداقل طول و پیچیدگی رمز
-- #### Dependency Security
-  - [ ] اجرای مرتب `npm audit`
-  - [ ] حذف پکیج‌های بلااستفاده
 - #### File Upload Security
   - [ ] بررسی نوع فایل [(MIME)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types/Common_types)
   - [ ] محدودیت حجم فایل
@@ -198,10 +195,13 @@
 
 ## 📦 Dependency
 
-- [ ] حذف پکیج‌های غیرضروری
-- [ ] آپدیت وابستگی‌ها
-- [ ] امنیت نسخه‌ها
-- [ ] قفل نسخه (lockfile)
+- [ ] بررسی Dependencyهای غیر ضروری با دستور `npx depcheck`
+- [ ] بررسی نسخه‌های جدید با دستور `npm update`
+- [ ] بررسی امنیت نسخه‌ها با دستور `npm audit`
+- [ ] بررسی حجم Dependency در [Bundlephobia](https://bundlephobia.com/)
+- [ ] توجه به RSC و RCC بودن Dependencyها
+- [ ] دسته‌بندی صحیح Packageها در دو دسته‌بندی `dependencies` و `devDependencies`
+- [ ] بررسی [Transitive Dependencies](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/) با دستور `npm ls`
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
@@ -258,7 +258,7 @@
 
 ---
 
-## 🏷️ Versioning
+## 🏷️ Versioning {#-versioning}
 
 - #### Readability & Naming
   - [ ] رعایت اصول [Semantic Versioning](https://www.geeksforgeeks.org/software-engineering/introduction-semantic-versioning/)
