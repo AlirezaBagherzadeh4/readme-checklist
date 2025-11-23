@@ -174,11 +174,11 @@
 
 - [ ] استفاده از _alt text_ تصاویر، به‌جز برای تصاویر تزئینی (بک‌گراند، آیکون‌های کنار متن)
 - [ ] استفاده از _ARIA Attributes_ به جز برای *Semantic Tag*ها
-- [ ] استفاده از Focus State، [مثال _tailwind_](https://tailwindcss.com/docs/hover-focus-and-other-states)
+- [ ] استفاده از Focus State، [مثال Tailwind](https://Tailwindcss.com/docs/hover-focus-and-other-states)
 - [ ] کنتراست رنگ‌ها طبق استاندارد [WCAG](https://webaim.org/resources/contrastchecker/)
 - [ ] استفاده از `<label />` برای فیلدها
 - [ ] مشخص کردن زبان برنامه `<html lang="fa">`
-- [ ] استفاده از [Skip Navigation Link](https://webaim.org/techniques/skipnav/)، [کاربرد _tailwind_](https://stackoverflow.com/questions/74226815/how-to-add-a-skip-to-main-content-link-that-only-shows-to-screen-readers-usin)
+- [ ] استفاده از [Skip Navigation Link](https://webaim.org/techniques/skipnav/)، [کاربرد Tailwind](https://stackoverflow.com/questions/74226815/how-to-add-a-skip-to-main-content-link-that-only-shows-to-screen-readers-usin)
 - [ ] کاربرد منطقی از [_Tabindex_](https://webaim.org/techniques/keyboard/tabindex), استفاده فقط برای _non-semantic clickable elements_
 
 ---
@@ -233,21 +233,16 @@
 ## 👨‍💻 14. Code Review
 
 - #### Readability & Naming
-  - [ ] نام‌گذاری واضح، قابل‌فهم و یکنواخت (camelCase در JS/TS)
-  - [ ] عدم استفاده از مخفف‌های بی‌معنی (`tmp`, `val`, `obj`)
-  - [ ] ساختار پوشه‌ها
-  - [ ] API Routing
-  - [ ] توضیح تکنولوژی‌ها
-  - [ ] نحوه _Build_ و _Deploy_
-  - [ ] _Node_ version
+  - [ ] نام‌گذاری بر اساس [استاندارد‌ها](https://github.com/kettanaito/naming-cheatsheet)
+  - [ ] عدم استفاده از مخفف‌های بی‌معنی (`tmp`, `val`, `obj`), [نمونه](https://github.com/hamettio/clean-code-javascript)
+  - [ ] استفاده از [JSDoc](https://jsdoc.app/tags-example)
 - #### Component Structure
-  - [ ] کامپوننت کوچک و تک‌وظیفه‌ای (Single Responsibility)
-  - [ ] فایل TSX بدون inline logic سنگین
+  - [ ] کامپوننت کوچک و تک‌وظیفه‌ای ([Single Responsibility](https://dev.to/mikhaelesa/single-responsibility-principle-in-react-10oc))
   - [ ] استفاده حداکثری از RSC در صورت نبود interactivity
   - [ ] استفاده از Client Component فقط در صورت نیاز (state / effect / events)
 - #### Clean Code & Maintainability
   - [ ] استفاده از توابع کوتاه و تک‌هدفه
-  - [ ] استفاده از early returnها
+  - [ ] استفاده از [early return](https://javascript.plainenglish.io/early-return-with-react-hooks-f96fa4a33124)ها
   - [ ] استفاده از async/await به جای then/catch زنجیره‌ای
   - [ ] error handling در سطح کامپوننت و API
 - #### TypeScript Quality
@@ -257,15 +252,14 @@
 - #### CSS & Styling Consistency
   - [ ] استفاده از Tailwind (طبق ترجیح پروژه) — بدون inline style
   - [ ] عدم وجود فایل CSS بزرگ و پیچیده
-  - [ ] پیاده‌سازی تم و رنگ‌ها در فایل کانفیگ tailwind
+  - [ ] پیاده‌سازی تم و رنگ‌ها در فایل کانفیگ Tailwind
 - #### Code Accessibility
-  - [ ] دکمه‌ها با `<button>` یا `<Link>` هستند (نه div clickable)
-  - [ ] تمام input/form ها label دارند
-  - [ ] کامپوننت‌های interactive نقش ARIA مناسب دارند
+  - [ ] عدم استفاده از clickable `div`
+  - [ ] استفاده از `<label />` برای فیلد‌ها
+  - [ ] استفاده از ARIA attributes برای کامپوننت‌های interactive
 - #### Error Boundaries & Edge Cases
   - [ ] استفاده از Next Error Handling
   - [ ] پیاده‌سازی صفحات خطا، و حالات loading / empty / error
-  - [ ] کامپوننت‌های interactive نقش ARIA مناسب دارند
 
 ---
 
