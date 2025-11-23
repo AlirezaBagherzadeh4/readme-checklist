@@ -43,7 +43,6 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
   - [ ] فقط یک `<h1>` برای هر صفحه
   - [ ] ساختار _heading_ منطقی (h1 → h2 → h3 → h4 → h5 → h6) [نمونه](https://substackcdn.com/image/fetch/$s_!JKn7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba08fa28-745a-458d-8c23-29acb08e2cef_1600x836.png)
   - [ ] _semantic HTML structure_: `<header>, <footer>, <main>, <article>, <section>, <aside>, <nav>, <figure>`
-  - [ ] تصاویر همراه با _alt text_
 - #### Link Strategy
   - [ ] لینک خوانا، برای مثال: `<Link href="/seo-best-practices">` [نمونه](https://substackcdn.com/image/fetch/$s_!fOM2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0dfd32c6-e2f8-433b-bdb1-5b9cf88717ba_1600x500.png)
   - [ ] لینک‌های خارجی با `rel="noopener noreferrer"`
@@ -171,13 +170,16 @@ _**این چک‌لیست برای کنترل کیفیت و آماده‌ساز�
 
 ---
 
-## 8. Accessibility
+## 🌐 8. Accessibility
 
-- [ ] تگ‌های ARIA
-- [ ] کنتراست رنگ‌ها
-- [ ] Keyboard Navigation
-- [ ] فوکوس‌ها قابل دیدن
-- [ ] تست Lighthouse A11y
+- [ ] استفاده از _alt text_ تصاویر، به‌جز برای تصاویر تزئینی (بک‌گراند، آیکون‌های کنار متن)
+- [ ] استفاده از _ARIA Attributes_ به جز برای *Semantic Tag*ها
+- [ ] استفاده از Focus State، [مثال _tailwind_](https://tailwindcss.com/docs/hover-focus-and-other-states)
+- [ ] کنتراست رنگ‌ها طبق استاندارد [WCAG](https://webaim.org/resources/contrastchecker/)
+- [ ] استفاده از `<label />` برای فیلدها
+- [ ] مشخص کردن زبان برنامه `<html lang="fa">`
+- [ ] استفاده از [Skip Navigation Link](https://webaim.org/techniques/skipnav/)، [کاربرد _tailwind_](https://stackoverflow.com/questions/74226815/how-to-add-a-skip-to-main-content-link-that-only-shows-to-screen-readers-usin)
+- [ ] کاربرد منطقی از [_Tabindex_](https://webaim.org/techniques/keyboard/tabindex), استفاده فقط برای _non-semantic clickable elements_
 
 ---
 
