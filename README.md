@@ -5,6 +5,26 @@
 **این چک‌لیست برای کنترل کیفیت و آماده‌سازی نهایی پروژه استفاده می‌شود.  
 هر سکشن شامل موارد ضروری برای بررسی است.**
 
+> [!TIP]
+> < / > الگو‌های پیاده‌سازی برای توسعه‌دهندگان ➜ [UX Patterns for Devs](https://uxpatterns.dev/en)
+
+## ☰ لیست موارد
+
+- [📈 SEO](#1-seo)
+- [🔒 Security](#2-security)
+- [📝 Documentation](#3-documentation)
+- [Logs](#4-logs)
+- [Services](#5-services)
+- [📊 Performance](#6-performance)
+- [Dependency](#7-dependency)
+- [🌐 Accessibility](#8-accessibility)
+- [Test](#9-test)
+- [UI](#10-ui)
+- [Deploy](#11-deploy)
+- [Versioning](#12-versioning)
+- [Flow](#13-flow)
+- [👨‍💻 Code Review](#14-code-review)
+
 ---
 
 ## 📈 1. SEO
@@ -52,6 +72,8 @@
   - [ ] ساخت _sitemap_ جدا برای هر زبان
   - [ ] مسیرهای داینامیک سازگار با _locale_
 
+**[⬆ بازگشت به بالا](#-table-of-contents)**
+
 ---
 
 ## 🔒 2. Security
@@ -85,6 +107,8 @@
   - [ ] محیط _production_ از _dev_ جدا باشد
   - [ ] _Secret-ENV_ ها فقط در سرور قرار بگیرند
 
+**[⬆ بازگشت به بالا](#-table-of-contents)**
+
 ---
 
 ## 📝 3. Documentation
@@ -115,6 +139,8 @@
 - #### Dev Notes
   - [ ] *TODO*های Developer
 
+**[⬆ بازگشت به بالا](#-table-of-contents)**
+
 ---
 
 ## 4. Logs
@@ -125,6 +151,8 @@
 - [ ] لاگ‌گیری از خطاهای حساس
 - [ ] امکان غیرفعال‌سازی لاگ در prod
 
+**[⬆ بازگشت به بالا](#-table-of-contents)**
+
 ---
 
 ## 5. Services
@@ -134,6 +162,8 @@
 - [ ] Error Handling کامل
 - [ ] سوییچ محیط dev/prod
 - [ ] تست Callهای API
+
+**[⬆ بازگشت به بالا](#-table-of-contents)**
 
 ---
 
@@ -159,6 +189,11 @@
   - [ ] LCP زیر ۲.۵ ثانیه
   - [ ] CLS < 0.1
 
+> [!TIP]
+> < / > [موارد تکمیلی](https://github.com/ms-fadaei/Front-End-Performance-Checklist)
+
+**[⬆ بازگشت به بالا](#-table-of-contents)**
+
 ---
 
 ## 7. Dependency
@@ -167,6 +202,8 @@
 - [ ] آپدیت وابستگی‌ها
 - [ ] امنیت نسخه‌ها
 - [ ] قفل نسخه (lockfile)
+
+**[⬆ بازگشت به بالا](#-table-of-contents)**
 
 ---
 
@@ -181,6 +218,8 @@
 - [ ] استفاده از [Skip Navigation Link](https://webaim.org/techniques/skipnav/)، [کاربرد Tailwind](https://stackoverflow.com/questions/74226815/how-to-add-a-skip-to-main-content-link-that-only-shows-to-screen-readers-usin)
 - [ ] کاربرد منطقی از [_Tabindex_](https://webaim.org/techniques/keyboard/tabindex), استفاده فقط برای _non-semantic clickable elements_
 
+**[⬆ بازگشت به بالا](#-table-of-contents)**
+
 ---
 
 ## 9. Test
@@ -190,6 +229,8 @@
 - [ ] تست E2E
 - [ ] پوشش تست‌ها (Coverage)
 - [ ] تست رگرسیون
+
+**[⬆ بازگشت به بالا](#-table-of-contents)**
 
 ---
 
@@ -201,6 +242,8 @@
 - [ ] رعایت Padding/Spacing
 - [ ] RTL/LTR در صورت نیاز
 
+**[⬆ بازگشت به بالا](#-table-of-contents)**
+
 ---
 
 ## 11. Deploy
@@ -211,6 +254,8 @@
 - [ ] Health-check
 - [ ] مانیتورینگ فعال
 
+**[⬆ بازگشت به بالا](#-table-of-contents)**
+
 ---
 
 ## 12. Versioning
@@ -218,6 +263,8 @@
 - [ ] رعایت Semantic Versioning
 - [ ] Tagهای منتشر شده
 - [ ] تغییرات در CHANGELOG ثبت شده
+
+**[⬆ بازگشت به بالا](#-table-of-contents)**
 
 ---
 
@@ -227,6 +274,8 @@
 - [ ] نقشه مسیر کاربر (User Flow)
 - [ ] Edge-caseها بررسی شده
 - [ ] رفتار خطا در جریان مشخص
+
+**[⬆ بازگشت به بالا](#-table-of-contents)**
 
 ---
 
@@ -261,6 +310,6 @@
   - [ ] استفاده از Next Error Handling
   - [ ] پیاده‌سازی صفحات خطا، و حالات loading / empty / error
 
----
+**[⬆ بازگشت به بالا](#-table-of-contents)**
 
 </div>
