@@ -17,7 +17,7 @@
 - [📊 Performance](#-performance)
 - [📦 Dependency](#-dependency)
 - [🌐 Accessibility](#-accessibility)
-- [Test](#-test)
+- [🔬 Test](#-test)
 - [UI](#-ui)
 - [Deploy](#-deploy)
 - [🏷️ Versioning](#-versioning)
@@ -114,17 +114,14 @@
   - [ ] دستور نصب و اجرا
   - [ ] ساختار پوشه‌ها
   - [ ] API Routing
-  - [ ] توضیح تکنولوژی‌ها
+  - [ ] توضیح packageها
   - [ ] نحوه _Build_ و _Deploy_
   - [ ] _Node_ version
+  - [ ] *TODO*های Developer
 - #### Architecture Docs
   - [ ] Folder structure توضیح
   - [ ] Data Flow
   - [ ] Routing Flow
-- #### API Documentation
-  - [ ] توضیح *endpoint*ها
-  - [ ] ورودی‌ها و خروجی‌ها
-  - [ ] توضیح status codeها
 - #### Contribution Guide
   - [ ] قوانین _commit_
   - [ ] قوانین _branch_
@@ -132,8 +129,6 @@
   - [ ] نسخه‌ها و تغییرات
   - [ ] اضافه شدن قابلیت‌ها
   - [ ] رفع باگ‌ها
-- #### Dev Notes
-  - [ ] *TODO*های Developer
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
@@ -166,14 +161,13 @@
 ## 📊 Performance
 
 - #### Code Performance
+
   - [x] جلوگیری از _re-render_ اضافی
   - [ ] [dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import)
-  - [ ] انتقال logic به [RSC](https://dev.to/hasunnilupul/react-server-components-rsc-a-deep-dive-with-examples-and-diagrams-3g4c)، برای کاهش بار جاوا اسکریپت
-  - [ ] کش کردن داده با [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Request/cache)
   - [ ] _Event Listeners_ [clean ups](https://refine.dev/blog/useeffect-cleanup/#introduction)
   - [ ] [Code Splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting)
+
 - #### Page Load
-  - [ ] استفاده بهینه از _SSG/SSR_
   - [ ] استفاده از [Next/Image](https://nextjs.org/docs/pages/getting-started/images)
   - [ ] استفاده از [Next/Font](https://nextjs.org/docs/pages/getting-started/fonts)
   - [ ] کاهش Layout Shift با width/height تصاویر, skeleton loader, placeholder blur
@@ -197,7 +191,6 @@
 - [ ] بررسی نسخه‌های جدید با دستور `npm update`
 - [ ] بررسی امنیت نسخه‌ها با دستور `npm audit`
 - [ ] بررسی حجم Dependency در [Bundlephobia](https://bundlephobia.com/)
-- [ ] توجه به RSC و RCC بودن Dependencyها
 - [ ] دسته‌بندی صحیح Packageها در دو دسته‌بندی `dependencies` و `devDependencies`
 - [ ] بررسی [Transitive Dependencies](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/) با دستور `npm ls`
 
@@ -213,20 +206,16 @@
 - [ ] کنتراست رنگ‌ها طبق استاندارد [WCAG](https://webaim.org/resources/contrastchecker/)
 - [ ] استفاده از `<label />` برای فیلدها
 - [ ] مشخص کردن زبان برنامه `<html lang="fa">`
-- [ ] استفاده از [Skip Navigation Link](https://webaim.org/techniques/skipnav/)، [کاربرد Tailwind](https://stackoverflow.com/questions/74226815/how-to-add-a-skip-to-main-content-link-that-only-shows-to-screen-readers-usin)
+- [ ] استفاده از [Skip Navigation Link](https://webaim.org/techniques/skipnav/)، [کاربرد Tailwind](https://tailwindcss.com/docs/display#screen-reader-only)
 - [ ] کاربرد منطقی از [_Tabindex_](https://webaim.org/techniques/keyboard/tabindex), استفاده فقط برای _non-semantic clickable elements_
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
 ---
 
-## Test
+## 🔬 Test
 
-- [ ] تست واحد (Unit)
-- [ ] تست integration
-- [ ] تست E2E
-- [ ] پوشش تست‌ها (Coverage)
-- [ ] تست رگرسیون
+- [ ] تست‌نویسی برای توابعی که دارای logic هستند
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
@@ -266,7 +255,6 @@
   - [ ] آپدیت نسخه در `package.json`
 - #### Documentation Update
   - [ ] آپدیت هر نسخه جدید در README/Docs
-  - [ ] نوشتن migration guide برای major releases
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
