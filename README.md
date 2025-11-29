@@ -68,7 +68,7 @@
 - #### ![alt text](medium-priority.png) Schema Markup / Structured Data
 
   > موارد این قسمت را می‌توانید بر اساس ساختار _🛠️_ [json-ld](https://json-ld.org/) پیاده‌سازی کنید.
-  > _🛠️_ [تست Schema Markup](https://validator.schema.org/) / [تست Structured Data](https://search.google.com/test/rich-results)پ
+  > _🛠️_ [تست Schema Markup](https://validator.schema.org/) / [تست Structured Data](https://search.google.com/test/rich-results)
 
   - [ ] [Article](https://developers.google.com/search/docs/appearance/structured-data/article)
   - [ ] [Breadcrumb](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb)
@@ -83,7 +83,7 @@
   - [ ] [Profile page](https://developers.google.com/search/docs/appearance/structured-data/profile-page)
   - [ ] [Video](https://developers.google.com/search/docs/appearance/structured-data/video)
 
-  > _📑_ [موارد تکمیلی](https://developers.google.com/search/docs/appearance/structured-data/search-gallery)
+  > _📑_ [اطلاعات بیشتر](https://developers.google.com/search/docs/appearance/structured-data/search-gallery)
 
 - #### ![alt text](high-priority.png) Sitemap & Robots.txt
   - [ ] `Sitemap.xml` به‌روز و صحیح، _📑_ [ساخت sitemap](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap)
@@ -195,12 +195,10 @@
 ## 📊 Performance
 
 - #### Code Performance
-
-  - [x] جلوگیری از _re-render_ اضافی
+  - [ ] بررسی و کنترل render ها با استفاده از _🛠️_ [React Developer Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en&pli=1)
   - [ ] _📑_ [dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import)
   - [ ] _Event Listeners_ _📑_ [clean ups](https://refine.dev/blog/useeffect-cleanup/#introduction)
   - [ ] _📑_ [Code Splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting)
-
 - #### Page Load
   - [ ] استفاده از _📑_ [Next/Image](https://nextjs.org/docs/pages/getting-started/images)
   - [ ] استفاده از _📑_ [Next/Font](https://nextjs.org/docs/pages/getting-started/fonts)
@@ -213,7 +211,7 @@
   - [ ] LCP زیر ۲.۵ ثانیه
   - [ ] CLS < 0.1
 
-> _🦊_ [موارد تکمیلی](https://github.com/ms-fadaei/Front-End-Performance-Checklist)
+> _🦊_ [اطلاعات بیشتر](https://github.com/ms-fadaei/Front-End-Performance-Checklist)
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
