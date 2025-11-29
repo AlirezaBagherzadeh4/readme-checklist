@@ -20,7 +20,9 @@
 - _📑_: documentation or article
 - _🛠️_: online tool / testing tool
 - _🖼️_: media or video content
-- _🦊_: Git repository
+- _🦊_: git repository
+
+**در آخر هر اسپرینت، پس از رعایت و انجام هر مورد، checkbox آن را آپدیت نمایید.**
 
 ---
 
@@ -45,13 +47,15 @@
 
 ## 📈 SEO
 
-- #### Meta Tags و ساختار HTML
-  - [ ] `<title></title>` مناسب (max 60)
-  - [ ] `<meta name="description" content="">` مرتبط برای هر صفحه (max 160 characters)
-  - [ ] `<meta name="robots">` (برای صفحات بلاک‌شده یا غیر indexable)
-  - [ ] `<link rel="canonical" href=""https://example.com/>` برای جلوگیری از duplicate content
-  - [ ] `<meta name="viewport">` برای رسپانسیو
+- #### ![alt text](image.png) Meta Tags و ساختار HTML
+  > برای مثال‌های کاربردی این بخش به _📑_ [Next.js Metadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata) رجوع کنید.
+  - [ ] قرار دادن برای هر صفحه `title` (max 60 characters), _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/title-tags/)
+  - [ ] `description` مرتبط برای هر صفحه (max 160 characters), _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/meta-descriptions/)
+  - [ ] ساخت آرایه‌ی `keywords`, _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/keyword-research/)
+  - [ ] استفاده از `canonical` برای جلوگیری از duplicate content, _📑_ [مستندات](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase)
+  - [ ] ![alt text](medium-priority.png) تعریف مقادیر meta مرتبط با viewport، مثل `color-scheme`, `theme-color` و... با استفاده از `generateViewport`, _📑_ [مستندات](https://nextjs.org/docs/app/api-reference/functions/generate-viewport)
 - #### ![alt text](image.png) _📑_ [Social Media](https://ogp.me/)
+  > برای این قسمت object openGraph را برای هر کدام از موارد پایین طبق این _📑_ [مستند](https://nextjs.org/docs/app/getting-started/metadata-and-og-images) کامل کنید
   - [ ] `og:title`
   - [ ] `og:description`
   - [ ] `og:image`
@@ -61,29 +65,42 @@
   - [ ] `twitter:title`
   - [ ] `twitter:description`
   - [ ] `twitter:card`
-- #### Schema Markup / Structured Data
-  - [ ] WebSite
-  - [ ] BreadcrumbList
-  - [ ] Organization
-  - [ ] Article / BlogPosting
-  - [ ] FAQ
-- #### Sitemap & Robots.txt
-  - [ ] `Sitemap.xml` به‌روز و صحیح
-  - [ ] فایل `robot.txt`
-  - [ ] Dynamic Sitemap برای صفحات داینامیک
-- #### Technical SEO (Next.js)
+- #### ![alt text](medium-priority.png) Schema Markup / Structured Data
+
+  > موارد این قسمت را می‌توانید بر اساس ساختار _🛠️_ [json-ld](https://json-ld.org/) پیاده‌سازی کنید.
+  > _🛠️_ [تست Schema Markup](https://validator.schema.org/) / [تست Structured Data](https://search.google.com/test/rich-results)پ
+
+  - [ ] [Article](https://developers.google.com/search/docs/appearance/structured-data/article)
+  - [ ] [Breadcrumb](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb)
+  - [ ] [Carousel](https://developers.google.com/search/docs/appearance/structured-data/carousel)
+  - [ ] [Dataset](https://developers.google.com/search/docs/appearance/structured-data/dataset)
+  - [ ] [Discussion forum](https://developers.google.com/search/docs/appearance/structured-data/discussion-forum)
+  - [ ] [Event](https://developers.google.com/search/docs/appearance/structured-data/event)
+  - [ ] [FAQ](https://developers.google.com/search/docs/appearance/structured-data/faqpage)
+  - [ ] [Image metadata](https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata)
+  - [ ] [Organization](https://developers.google.com/search/docs/appearance/structured-data/organization)
+  - [ ] [Product](https://developers.google.com/search/docs/appearance/structured-data/product)
+  - [ ] [Profile page](https://developers.google.com/search/docs/appearance/structured-data/profile-page)
+  - [ ] [Video](https://developers.google.com/search/docs/appearance/structured-data/video)
+
+  > _📑_ [موارد تکمیلی](https://developers.google.com/search/docs/appearance/structured-data/search-gallery)
+
+- #### ![alt text](high-priority.png) Sitemap & Robots.txt
+  - [ ] `Sitemap.xml` به‌روز و صحیح، _📑_ [ساخت sitemap](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap)
+  - [ ] قرار دادن فایل robots.txt در روت پروژه, _📑_ [مستندات](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots)
+  - [ ] Dynamic Sitemap برای صفحات داینامیک, [نمونه](https://nextjs.org/docs/app/api-reference/functions/generate-sitemaps)
+- #### ![alt text](high-priority.png) Technical SEO (Next.js)
   - [ ] استفاده از `<Link>` برای لینک داخلی
   - [ ] کنترل صفحات تکراری برای جلوگیری از رندر چندباره
-  - [ ] جلوگیری از رندر ناقص سمت کلاینت که باعث indexing ناقص می‌شود
-- #### Content SEO
+- #### ![alt text](high-priority.png) Content SEO
   - [ ] فقط یک `<h1>` برای هر صفحه
   - [ ] ساختار _heading_ منطقی (h1 → h2 → h3 → h4 → h5 → h6) _🖼️_ [نمونه](https://substackcdn.com/image/fetch/$s_!JKn7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba08fa28-745a-458d-8c23-29acb08e2cef_1600x836.png)
   - [ ] _semantic HTML structure_: `<header>, <footer>, <main>, <article>, <section>, <aside>, <nav>, <figure>`
-- #### Link Strategy
+- #### ![alt text](high-priority.png) Link Strategy
   - [ ] لینک خوانا، برای مثال: `<Link href="/seo-best-practices">` _🖼️_ [نمونه](https://substackcdn.com/image/fetch/$s_!fOM2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0dfd32c6-e2f8-433b-bdb1-5b9cf88717ba_1600x500.png)
   - [ ] لینک‌های خارجی با `rel="noopener noreferrer"`
   - [ ] 404 نشدن لینک‌ها
-- #### International SEO (در صورت استفاده از i18n)
+- #### ![alt text](medium-priority.png) International SEO (در صورت استفاده از i18n)
   - [ ] استفاده از `hreflang`
   - [ ] ساخت _sitemap_ جدا برای هر زبان
   - [ ] مسیرهای داینامیک سازگار با _locale_
