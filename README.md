@@ -34,7 +34,7 @@
   - [ ] `<meta name="robots">` (برای صفحات بلاک‌شده یا غیر indexable)
   - [ ] `<link rel="canonical" href=""https://example.com/>` برای جلوگیری از duplicate content
   - [ ] `<meta name="viewport">` برای رسپانسیو
-- #### Social Media
+- #### [Social Media](https://ogp.me/)
   - [ ] `og:title`
   - [ ] `og:description`
   - [ ] `og:image`
