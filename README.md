@@ -47,14 +47,14 @@
 
 ## 📈 SEO
 
-- #### ![alt text](image.png) Meta Tags و ساختار HTML
+- #### ![alt text](high-priority.png) Meta Tags و ساختار HTML
   > برای مثال‌های کاربردی این بخش به _📑_ [Next.js Metadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata) رجوع کنید.
   - [ ] قرار دادن برای هر صفحه `title` (max 60 characters), _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/title-tags/)
   - [ ] `description` مرتبط برای هر صفحه (max 160 characters), _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/meta-descriptions/)
   - [ ] ساخت آرایه‌ی `keywords`, _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/keyword-research/)
   - [ ] استفاده از `canonical` برای جلوگیری از duplicate content, _📑_ [مستندات](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase)
   - [ ] ![alt text](medium-priority.png) تعریف مقادیر meta مرتبط با viewport، مثل `color-scheme`, `theme-color` و... با استفاده از `generateViewport`, _📑_ [مستندات](https://nextjs.org/docs/app/api-reference/functions/generate-viewport)
-- #### ![alt text](image.png) _📑_ [Social Media](https://ogp.me/)
+- #### ![alt text](high-priority.png) _📑_ [Social Media](https://ogp.me/)
   > برای این قسمت object openGraph را برای هر کدام از موارد پایین طبق این _📑_ [مستند](https://nextjs.org/docs/app/getting-started/metadata-and-og-images) کامل کنید
   - [ ] `og:title`
   - [ ] `og:description`
