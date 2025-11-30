@@ -143,26 +143,32 @@
 
 ## 📝 Documentation
 
-- #### README file
-  - [ ] توضیح کامل پروژه
-  - [ ] دستور نصب و اجرا
-  - [ ] ساختار پوشه‌ها
-  - [ ] API Routing
-  - [ ] توضیح packageها
-  - [ ] نحوه _Build_ و _Deploy_
-  - [ ] _Node_ version
-  - [ ] *TODO*های Developer
-- #### Architecture Docs
-  - [ ] Folder structure توضیح
-  - [ ] Data Flow
-  - [ ] Routing Flow
+> برای این بخش به‌ترتیب در فایل README.md پروژه موارد زیر را رعایت کنید.
+
+- #### Project Name & Description
+  - [ ] ذکر عنوان پروژه
+  - [ ] توضیح پروژه، هدف‌های آن و کلیتی از تکنولوژی‌های استفاده شده
+  - [ ] ذکر پیش‌نیاز‌های مورد نظر پروژه، مانند نسخه `Node.js`، `npm`
+- #### Folder Structure
+  - [ ] ذکر Root-Level files همراه با توضیح مختصر هر یک
+  - [ ] ذکر فولدربندی و فایل‌های داخل در `/src` (Source Code root), مانند `/app`, `/modules`, `/shared`, `styles` همراه با محتویات هر یک و توضیحات آن
+  - [ ] ذکر Naming Conventionهای به‌ترتیب `Files`, `Components`, `Functions/Utils`, `Types/Interfaces`, `Folders`
+- #### Installation (Scripts & Commands)
+  - [ ] ذکر تمام دستورات مورد نیاز برای نصب و اجرای پروژه، مانند `npm install`, `npm run dev` (برای Development Mode), `npm run build`, `npm run lint` و...
+  - [ ] ذکر scriptهایی که در قالب دستور `npm run <script>` اجرا می‌شوند، در قالب یک جدول همراه توضیح هر کدام
+- #### Environmental Variables
+  - [ ] توضیح در رابطه با نحوه ایجاد فایل `.env`
+  - [ ] ذکر تمام Variableهای مورد نظر پروژه، **توجه! مقادیر متغیرهای امنیتی مانند `CLIENT_ID`, `PRIVATE_KEY` و قرار داده نشود**
+  - [ ] توضیح در رابطه با نحوه استفاده و نام‌گذاری متغیرها
+  - [ ] ignore کردن فایل `.env` در فایل `.gitignore`
+- #### Third-Party Packages
+  - [ ] ذکر تمام Dependencies پروژه در قالب یک جدول همراه با نسخه‌شان
+  - [ ] ذکر تمام Dev Dependencies پروژه در قالب یک جدول همراه با نسخه‌شان
+- #### CI/CD Pipelines
+  - [ ] توضیح pipelineهای استفاده شده برای deployment پروژه، مانند Pre-commit hooks (مانند _🛠️_ [husky](https://typicode.github.io/husky/))
 - #### Contribution Guide
-  - [ ] قوانین _commit_
-  - [ ] قوانین _branch_
-- #### CHANGELOG
-  - [ ] نسخه‌ها و تغییرات
-  - [ ] اضافه شدن قابلیت‌ها
-  - [ ] رفع باگ‌ها
+  - [ ] توضیح در مورد قوانین commit، طبق _📑_ [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#specification), مثال جامع: `<type>(<optional scope>): <description>`
+  - [ ] توضیح در مورد قوانین branch، طبق _📑_ [Conventional Branch](https://conventional-branch.github.io/), مثال جامع: `<type>/<description>`
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
