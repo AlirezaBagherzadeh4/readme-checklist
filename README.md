@@ -98,10 +98,10 @@
 - #### ![alt text](high-priority.png) Content SEO
   - [ ] فقط یک `<h1>` برای هر صفحه
   - [ ] ساختار _heading_ منطقی (h1 → h2 → h3 → h4 → h5 → h6) _🖼️_ [نمونه](https://substackcdn.com/image/fetch/$s_!JKn7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba08fa28-745a-458d-8c23-29acb08e2cef_1600x836.png)
-  - [ ] _semantic HTML structure_: `<header>, <footer>, <main>, <article>, <section>, <aside>, <nav>, <figure>`
+  - [ ] _📑_ [_semantic HTML structure_](https://www.w3schools.com/html/html5_semantic_elements.asp): `<header>, <footer>, <main>, <article>, <section>, <aside>, <nav>, <figure>`
 - #### ![alt text](high-priority.png) Link Strategy
   - [ ] لینک خوانا، برای مثال: `<Link href="/seo-best-practices">` _🖼️_ [نمونه](https://substackcdn.com/image/fetch/$s_!fOM2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0dfd32c6-e2f8-433b-bdb1-5b9cf88717ba_1600x500.png)
-  - [ ] لینک‌های خارجی با `rel="noopener noreferrer"`
+  - [ ] لینک‌های خارجی با `rel="noopener noreferrer"`, _📑_ [rel attr](https://www.w3schools.com/tags/att_a_rel.asp)
   - [ ] 404 نشدن لینک‌ها
 - #### ![alt text](medium-priority.png) International SEO (در صورت استفاده از i18n)
   - [ ] استفاده از `hreflang`
@@ -146,10 +146,10 @@
 
 ## 📝 Documentation
 
-> برای این بخش به‌ترتیب در فایل README.md پروژه موارد زیر را رعایت کنید.
+> برای این بخش به‌ترتیب در فایل `README.md` پروژه موارد زیر را رعایت کنید.
 
 - #### ![alt text](high-priority.png) Project Name & Description
-  - [ ] ذکر عنوان پروژه
+  - [ ] ذکر عنوان و نسخه پروژه
   - [ ] توضیح پروژه، هدف‌های آن و کلیتی از تکنولوژی‌های استفاده شده
   - [ ] ذکر پیش‌نیاز‌های مورد نظر پروژه، مانند نسخه `Node.js`، `npm`
 - #### Folder Structure
@@ -218,8 +218,8 @@
   - [ ] تصاویر کارد بلاگ‌ها، مقالات، داخل مدال، فوتر به صورت `loading="lazy"`, _📑_ [مستندات](https://nextjs.org/docs/pages/api-reference/components/image#loading)
 - #### ![alt text](high-priority.png) Lighthouse
   - [ ] بررسی _📑_ [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) برای هر صفحه
-  - [ ] [LCP](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint) زیر ۲.۵ ثانیه
-  - [ ] [CLS](https://web.dev/articles/cls) < [0.1](https://web.dev/static/articles/cls/image/good-cls-values.svg)
+  - [ ] _📑_ [LCP](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint) زیر ۲.۵ ثانیه
+  - [ ] _📑_ [CLS](https://web.dev/articles/cls) < _🖼️_ [0.1](https://web.dev/static/articles/cls/image/good-cls-values.svg)
 
 > _🦊_ [اطلاعات بیشتر](https://github.com/thedaviddias/Front-End-Performance-Checklist)
 
@@ -243,7 +243,7 @@
 ## 🌐 Accessibility
 
 - [ ] ![alt text](high-priority.png) استفاده از _alt text_ تصاویر، به‌جز برای تصاویر تزئینی (بک‌گراند، آیکون‌های کنار متن)
-- [ ] ![alt text](high-priority.png) استفاده از _ARIA Attributes_ به جز برای *Semantic Tag*ها
+- [ ] ![alt text](high-priority.png) استفاده از _📑_ [_ARIA Attributes_](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes) به جز برای *Semantic Tag*ها
 - [ ] ![alt text](medium-priority.png) استفاده از Focus State، _📑_ [مثال Tailwind](https://Tailwindcss.com/docs/hover-focus-and-other-states)
 - [ ] ![alt text](medium-priority.png) کنتراست رنگ‌ها طبق استاندارد _🛠️_ [WCAG](https://webaim.org/resources/contrastchecker/)
 - [ ] ![alt text](high-priority.png) استفاده از `<label />` برای فیلدها
@@ -289,14 +289,10 @@
 
 ## 🏷️ Versioning {#-versioning}
 
-- #### Readability & Naming
-  - [ ] رعایت اصول _📑_ [Semantic Versioning](https://www.geeksforgeeks.org/software-engineering/introduction-semantic-versioning/)
-- #### CHANGELOG / Release Notes
-  - [ ] ثبت تغییرات هر نسخه در CHANGELOG
-- #### Versioning داخل پروژه
-  - [ ] آپدیت نسخه در `package.json`
-- #### Documentation Update
-  - [ ] آپدیت هر نسخه جدید در README/Docs
+- [ ] ![alt text](high-priority.png) رعایت اصول _📑_ [Semantic Versioning](https://www.geeksforgeeks.org/software-engineering/introduction-semantic-versioning/), _🖼️_ [مثال](https://media.geeksforgeeks.org/wp-content/uploads/semver.png): `major-version.minor-version.patches`
+- [ ] ![alt text](high-priority.png) ثبت تغییرات هر نسخه در CHANGELOG
+- [ ] ![alt text](high-priority.png) آپدیت هر نسخه در `package.json`
+- [ ] ![alt text](high-priority.png) آپدیت هر نسخه در `README.md`
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
@@ -315,34 +311,31 @@
 
 ## 👨🏻‍💻 Code Review
 
-- #### Readability & Naming
+- #### ![alt text](high-priority.png) Readability & Naming
   - [ ] نام‌گذاری بر اساس _🦊_ [استاندارد‌ها](https://github.com/kettanaito/naming-cheatsheet)
-  - [ ] عدم استفاده از مخفف‌های بی‌معنی (`tmp`, `val`, `obj`), _🦊_ [نمونه](https://github.com/hamettio/clean-code-javascript)
-  - [ ] استفاده از _🛠️_ [JSDoc](https://jsdoc.app/tags-example)
-- #### Component Structure
-  - [ ] کامپوننت کوچک و تک‌وظیفه‌ای _🛠️_ ([Single Responsibility](https://dev.to/mikhaelesa/single-responsibility-principle-in-react-10oc))
+  - [ ] عدم استفاده از مخفف‌های بی‌معنی (`tmp`, `val`, `obj`), _🦊_ [نمونه](https://github.com/ryanmcdermott/clean-code-javascript)
+  - [ ] استفاده از _🛠️_ [TypeDoc](https://typedoc.org/), برای مستندسازی کد
+- #### ![alt text](high-priority.png) Component Structure
+  - [ ] کامپوننت کوچک و تک‌وظیفه‌ای _📑_ ([Single Responsibility](https://react.dev/learn/thinking-in-react))
   - [ ] استفاده حداکثری از RSC در صورت نبود interactivity
   - [ ] استفاده از Client Component فقط در صورت نیاز (state / effect / events)
-- #### Clean Code & Maintainability
+- #### ![alt text](high-priority.png) Clean Code & Maintainability
   - [ ] استفاده از توابع کوتاه و تک‌هدفه
-  - [ ] استفاده از _📑_ [early return](https://javascript.plainenglish.io/early-return-with-react-hooks-f96fa4a33124)ها
   - [ ] استفاده از async/await به جای then/catch زنجیره‌ای
-  - [ ] error handling در سطح کامپوننت و API
-- #### TypeScript Quality
+- #### ![alt text](high-priority.png) TypeScript Quality
   - [ ] عدم استفاده از any
   - [ ] پیاده‌سازی type برای تمام توابع
   - [ ] استفاده از unknown برای ورودی‌های ناشناخته
-- #### CSS & Styling Consistency
+- #### ![alt text](medium-priority.png) CSS & Styling Consistency
   - [ ] استفاده از Tailwind (طبق ترجیح پروژه) — بدون inline style
   - [ ] عدم وجود فایل CSS بزرگ و پیچیده
   - [ ] پیاده‌سازی تم و رنگ‌ها در فایل کانفیگ Tailwind
-- #### Code Accessibility
+- #### ![alt text](high-priority.png) Code Accessibility
   - [ ] عدم استفاده از clickable `div`
-  - [ ] استفاده از `<label />` برای فیلد‌ها
-  - [ ] استفاده از ARIA attributes برای کامپوننت‌های interactive
-- #### Error Boundaries & Edge Cases
-  - [ ] استفاده از Next Error Handling
-  - [ ] پیاده‌سازی صفحات خطا، و حالات loading / empty / error
+  - [ ] استفاده از _📑_ [_ARIA attributes_](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes) برای کامپوننت‌های interactive
+- #### ![alt text](high-priority.png) Error Boundaries & Edge Cases
+  - [ ] _📑_ [Error Handling](https://nextjs.org/docs/app/getting-started/error-handling) در سطح کامپوننت و API
+  - [ ] پیاده‌سازی و کنترل صفحات خطا، و حالات [loading](https://nextjs.org/docs/app/api-reference/file-conventions/loading) / empty / [error](https://nextjs.org/docs/pages/building-your-application/routing/custom-error)
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
