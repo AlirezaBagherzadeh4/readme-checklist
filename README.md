@@ -318,14 +318,13 @@
 - #### ![alt text](high-priority.png) Component Structure
   - [ ] کامپوننت کوچک و تک‌وظیفه‌ای _📑_ ([Single Responsibility](https://react.dev/learn/thinking-in-react))
   - [ ] استفاده حداکثری از RSC در صورت نبود interactivity
-  - [ ] استفاده از Client Component فقط در صورت نیاز (state / effect / events)
 - #### ![alt text](high-priority.png) Clean Code & Maintainability
   - [ ] استفاده از توابع کوتاه و تک‌هدفه
-  - [ ] استفاده از async/await به جای then/catch زنجیره‌ای
+  - [ ] استفاده از _async/await_ به جای _then/catch_ زنجیره‌ای
 - #### ![alt text](high-priority.png) TypeScript Quality
-  - [ ] عدم استفاده از any
-  - [ ] پیاده‌سازی type برای تمام توابع
-  - [ ] استفاده از unknown برای ورودی‌های ناشناخته
+  - [ ] عدم استفاده از `any`
+  - [ ] پیاده‌سازی _type_ برای تمام توابع
+  - [ ] استفاده از `unknown` برای ورودی‌های ناشناخته
 - #### ![alt text](medium-priority.png) CSS & Styling Consistency
   - [ ] استفاده از Tailwind (طبق ترجیح پروژه) — بدون inline style
   - [ ] عدم وجود فایل CSS بزرگ و پیچیده
