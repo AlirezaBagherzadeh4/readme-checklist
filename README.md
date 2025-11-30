@@ -14,6 +14,9 @@
 - ![alt text](high-priority.png) مشخص می‌کند این مورد حتماً نیاز به‌رعایت شدن دارد
 - ![alt text](medium-priority.png) مشخص می‌کند این مورد بر اساس نیازمندی‌های پروژه و هماهنگی با مسئول مربوطه نیاز به بررسی دارد
 
+> در صورتی که این دو آیکون پشت عنوان یک بخش بودند، بررسی تمام موارد آن بخش الزامی‌ست،
+> در غیر این صورت اولویت هر مورد به طور مجزا مشخص شده است.
+
 **در مقابل هر مورد ممکن است رفرنسی قرار گرفته باشد یا خود عنوان/سرفصل در قالب لینک نوشته شده باشد.
 قالب رفرنس‌ها در بخش‌های زیر دسته‌بندی شده‌اند.**
 
@@ -200,20 +203,20 @@
 
 ## 📊 Performance
 
-- #### Code Performance
-  - [ ] بررسی و کنترل render ها با استفاده از _🛠️_ [React Developer Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en&pli=1)
+- #### ![alt text](high-priority.png) Code Performance
+  - [ ] بررسی و کنترل render ها با استفاده از _🛠️_ [React Developer Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en&pli=1), _📑_ [نحوه استفاده](https://react.dev/learn/react-developer-tools)
   - [ ] _📑_ [dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import)
   - [ ] _Event Listeners_ _📑_ [clean ups](https://refine.dev/blog/useeffect-cleanup/#introduction)
   - [ ] _📑_ [Code Splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting)
-- #### Page Load
+- #### ![alt text](high-priority.png) Page Load
   - [ ] استفاده از _📑_ [Next/Image](https://nextjs.org/docs/pages/getting-started/images)
   - [ ] استفاده از _📑_ [Next/Font](https://nextjs.org/docs/pages/getting-started/fonts)
   - [ ] کاهش Layout Shift با width/height تصاویر, skeleton loader, placeholder blur
-- #### Image Loading
+- #### ![alt text](high-priority.png) Image Loading
   - [ ] تصویر LCP با `priority={true}`
   - [ ] لوگوی سایت، تصویر Hero و اسلایدر بالای صفحه به صورت `loading="eager"`
   - [ ] تصاویر کارد بلاگ‌ها، مقالات، داخل مدال، فوتر به صورت `loading="lazy"`
-- #### Lighthouse
+- #### ![alt text](high-priority.png) Lighthouse
   - [ ] LCP زیر ۲.۵ ثانیه
   - [ ] CLS < 0.1
 
@@ -225,12 +228,12 @@
 
 ## 📦 Dependency
 
-- [ ] بررسی Dependencyهای غیر ضروری با دستور `npx depcheck`
-- [ ] بررسی نسخه‌های جدید با دستور `npm update`
-- [ ] بررسی امنیت نسخه‌ها با دستور `npm audit`
-- [ ] بررسی حجم Dependency در _🛠️_ [Bundlephobia](https://bundlephobia.com/)
-- [ ] دسته‌بندی صحیح Packageها در دو دسته‌بندی `dependencies` و `devDependencies`
-- [ ] بررسی _📑_ [Transitive Dependencies](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/) با دستور `npm ls`
+- [ ] ![alt text](high-priority.png) بررسی Dependencyهای غیر ضرروری با _🛠️_ [depcheck](https://www.npmjs.com/package/depcheck)
+- [ ] ![alt text](medium-priority.png) بررسی نسخه‌های جدید با دستور _📑_ [npm update](https://docs.npmjs.com/cli/v8/commands/npm-update), همینطور می‌توانید از _🛠️_ [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) نیز استفاده کنید
+- [ ] ![alt text](high-priority.png) بررسی امنیت نسخه‌ها با دستور _📑_ [npm audit](https://docs.npmjs.com/cli/v9/commands/npm-audit)
+- [ ] ![alt text](high-priority.png) بررسی حجم Dependency در _🛠️_ [Bundlephobia](https://bundlephobia.com/)
+- [ ] ![alt text](high-priority.png) دسته‌بندی صحیح Packageها در دو دسته‌بندی `dependencies` و `devDependencies`, _📑_ [مستندات](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file)
+- [ ] ![alt text](medium-priority.png) بررسی _📑_ [Transitive Dependencies](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/) با دستور `npm ls`
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
@@ -238,14 +241,14 @@
 
 ## 🌐 Accessibility
 
-- [ ] استفاده از _alt text_ تصاویر، به‌جز برای تصاویر تزئینی (بک‌گراند، آیکون‌های کنار متن)
-- [ ] استفاده از _ARIA Attributes_ به جز برای *Semantic Tag*ها
-- [ ] استفاده از Focus State، _📑_ [مثال Tailwind](https://Tailwindcss.com/docs/hover-focus-and-other-states)
-- [ ] کنتراست رنگ‌ها طبق استاندارد _🛠️_ [WCAG](https://webaim.org/resources/contrastchecker/)
-- [ ] استفاده از `<label />` برای فیلدها
-- [ ] مشخص کردن زبان برنامه `<html lang="fa">`
-- [ ] استفاده از _📑_ [Skip Navigation Link](https://webaim.org/techniques/skipnav/)، [کاربرد Tailwind](https://tailwindcss.com/docs/display#screen-reader-only)
-- [ ] کاربرد منطقی از _📑_ [_Tabindex_](https://webaim.org/techniques/keyboard/tabindex), استفاده فقط برای _non-semantic clickable elements_
+- [ ] ![alt text](high-priority.png) استفاده از _alt text_ تصاویر، به‌جز برای تصاویر تزئینی (بک‌گراند، آیکون‌های کنار متن)
+- [ ] ![alt text](high-priority.png) استفاده از _ARIA Attributes_ به جز برای *Semantic Tag*ها
+- [ ] ![alt text](medium-priority.png) استفاده از Focus State، _📑_ [مثال Tailwind](https://Tailwindcss.com/docs/hover-focus-and-other-states)
+- [ ] ![alt text](medium-priority.png) کنتراست رنگ‌ها طبق استاندارد _🛠️_ [WCAG](https://webaim.org/resources/contrastchecker/)
+- [ ] ![alt text](high-priority.png) استفاده از `<label />` برای فیلدها
+- [ ] ![alt text](medium-priority.png) مشخص کردن زبان برنامه `<html lang="fa">`
+- [ ] ![alt text](medium-priority.png) استفاده از _📑_ [Skip Navigation Link](https://webaim.org/techniques/skipnav/)، [کاربرد Tailwind](https://tailwindcss.com/docs/display#screen-reader-only)
+- [ ] ![alt text](medium-priority.png) کاربرد منطقی از _📑_ [_Tabindex_](https://webaim.org/techniques/keyboard/tabindex), استفاده فقط برای _non-semantic clickable elements_
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
