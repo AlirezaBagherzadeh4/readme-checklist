@@ -50,12 +50,12 @@
 
 ## 📈 SEO
 
-- #### ![alt text](high-priority.png) Meta Tags و ساختار HTML
+- #### Meta Tags و ساختار HTML
   > برای مثال‌های کاربردی این بخش به _📑_ [Next.js Metadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata) رجوع کنید.
-  - [ ] قرار دادن برای هر صفحه `title` (max 60 characters), _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/title-tags/)
-  - [ ] `description` مرتبط برای هر صفحه (max 160 characters), _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/meta-descriptions/)
-  - [ ] ساخت آرایه‌ی `keywords`, _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/keyword-research/)
-  - [ ] استفاده از `canonical` برای جلوگیری از duplicate content, _📑_ [مستندات](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase)
+  - [ ] ![alt text](high-priority.png) قرار دادن برای هر صفحه `title` (max 60 characters), _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/title-tags/)
+  - [ ] ![alt text](high-priority.png) `description` مرتبط برای هر صفحه (max 160 characters), _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/meta-descriptions/)
+  - [ ] ![alt text](high-priority.png) ساخت آرایه‌ی `keywords`, _📑_ [مستندات](https://www.seo.com/basics/on-page-seo/keyword-research/)
+  - [ ] ![alt text](high-priority.png) استفاده از `canonical` برای جلوگیری از duplicate content, _📑_ [مستندات](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase)
   - [ ] ![alt text](medium-priority.png) تعریف مقادیر meta مرتبط با viewport، مثل `color-scheme`, `theme-color` و... با استفاده از `generateViewport`, _📑_ [مستندات](https://nextjs.org/docs/app/api-reference/functions/generate-viewport)
 - #### ![alt text](high-priority.png) _📑_ [Social Media](https://ogp.me/)
   > برای این قسمت object openGraph را برای هر کدام از موارد پایین طبق این _📑_ [مستند](https://nextjs.org/docs/app/getting-started/metadata-and-og-images) کامل کنید
@@ -205,13 +205,13 @@
 
 - #### ![alt text](high-priority.png) Code Performance
   - [ ] بررسی و کنترل render ها با استفاده از _🛠️_ [React Developer Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en&pli=1), _📑_ [نحوه استفاده](https://react.dev/learn/react-developer-tools)
-  - [ ] _📑_ [dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import)
-  - [ ] _Event Listeners_ _📑_ [clean ups](https://refine.dev/blog/useeffect-cleanup/#introduction)
-  - [ ] _📑_ [Code Splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting)
+  - [ ] استفاده از _📑_ [Next/Dynamic](https://nextjs.org/docs/pages/guides/lazy-loading) در صورت نیاز به کنترل _📑_ [SSR](https://nextjs.org/docs/pages/guides/lazy-loading#with-no-ssr) و _📑_ [fallback](https://nextjs.org/docs/pages/guides/lazy-loading#nextdynamic-1)
+  - [ ] توجه به _Event Listeners_ _📑_ [clean ups](https://refine.dev/blog/useeffect-cleanup/#introduction)
+  - [ ] رعایت اصول _📑_ [Code Splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting), توضیحات [Next.js](https://nextjs.org/docs/pages/guides/production-checklist#automatic-optimizations) در این خصوص
 - #### ![alt text](high-priority.png) Page Load
   - [ ] استفاده از _📑_ [Next/Image](https://nextjs.org/docs/pages/getting-started/images)
   - [ ] استفاده از _📑_ [Next/Font](https://nextjs.org/docs/pages/getting-started/fonts)
-  - [ ] کاهش Layout Shift با width/height تصاویر, skeleton loader, placeholder blur
+  - [ ] کاهش _📑_ [Layout Shift](https://nextjs.org/learn/seo/cls) با _📑_ [width/height](https://nextjs.org/docs/pages/api-reference/components/image#width-and-height) تصاویر, skeleton loader, _📑_ [placeholder blur](https://nextjs.org/docs/pages/api-reference/components/image#placeholder)
 - #### ![alt text](high-priority.png) Image Loading
   - [ ] تصویر LCP با `priority={true}`, _📑_ [مستندات](https://nextjs.org/docs/pages/api-reference/components/image#priority)
   - [ ] لوگوی سایت، تصویر Hero و اسلایدر بالای صفحه به صورت `loading="eager"`, _📑_ [مستندات](https://nextjs.org/docs/pages/api-reference/components/image#loading)
