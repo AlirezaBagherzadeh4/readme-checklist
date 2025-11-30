@@ -5,7 +5,7 @@
 **این چک‌لیست برای کنترل کیفیت و آماده‌سازی نهایی پروژه استفاده می‌شود.  
 هر سکشن شامل موارد ضروری برای بررسی است.**
 
-> ‎🛠 الگوهای پیاده‌سازی برای توسعه‌دهندگان ➜ [UX Patterns for Devs](https://uxpatterns.dev/en)
+> ‎🧩 الگوهای پیاده‌سازی برای توسعه‌دهندگان ➜ [UX Patterns for Devs](https://uxpatterns.dev/en)
 
 ## 💡 نحوه استفاده
 
@@ -213,14 +213,15 @@
   - [ ] استفاده از _📑_ [Next/Font](https://nextjs.org/docs/pages/getting-started/fonts)
   - [ ] کاهش Layout Shift با width/height تصاویر, skeleton loader, placeholder blur
 - #### ![alt text](high-priority.png) Image Loading
-  - [ ] تصویر LCP با `priority={true}`
-  - [ ] لوگوی سایت، تصویر Hero و اسلایدر بالای صفحه به صورت `loading="eager"`
-  - [ ] تصاویر کارد بلاگ‌ها، مقالات، داخل مدال، فوتر به صورت `loading="lazy"`
+  - [ ] تصویر LCP با `priority={true}`, _📑_ [مستندات](https://nextjs.org/docs/pages/api-reference/components/image#priority)
+  - [ ] لوگوی سایت، تصویر Hero و اسلایدر بالای صفحه به صورت `loading="eager"`, _📑_ [مستندات](https://nextjs.org/docs/pages/api-reference/components/image#loading)
+  - [ ] تصاویر کارد بلاگ‌ها، مقالات، داخل مدال، فوتر به صورت `loading="lazy"`, _📑_ [مستندات](https://nextjs.org/docs/pages/api-reference/components/image#loading)
 - #### ![alt text](high-priority.png) Lighthouse
-  - [ ] LCP زیر ۲.۵ ثانیه
-  - [ ] CLS < 0.1
+  - [ ] بررسی _📑_ [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) برای هر صفحه
+  - [ ] [LCP](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint) زیر ۲.۵ ثانیه
+  - [ ] [CLS](https://web.dev/articles/cls) < [0.1](https://web.dev/static/articles/cls/image/good-cls-values.svg)
 
-> _🦊_ [اطلاعات بیشتر](https://github.com/ms-fadaei/Front-End-Performance-Checklist)
+> _🦊_ [اطلاعات بیشتر](https://github.com/thedaviddias/Front-End-Performance-Checklist)
 
 **[⇡ بازگشت به بالا](#-لیست-موارد)**
 
